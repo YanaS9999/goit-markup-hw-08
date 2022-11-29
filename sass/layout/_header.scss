@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid var(--border-bottom-header-color);
+}
+
+.header__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}

@@ -1,0 +1,90 @@
+.team {
+  padding: 60px 0;
+  // min-width: 480px;
+  background-color: var(--secondary-background-color);
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
+
+.team__title {
+  display: block;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.team__list {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+
+.team__card {
+  width: 100%;
+  background-color: var(--primary-background-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.team__item {
+  padding: 30px 30px 24px 30px;
+
+  @media screen and (min-width: $desktop) {
+    padding: 30px;
+  }
+}
+
+.team__subtitle {
+  display: block;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team__text {
+  display: block;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.team__image {
+  width: 100%;
+  height: auto;
+}
